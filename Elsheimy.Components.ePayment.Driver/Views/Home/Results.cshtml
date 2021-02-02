@@ -1,0 +1,25 @@
+﻿@model string
+@{
+  ViewBag.Title = "Mastercard MIGS Sample | Results";
+}
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-header">
+        <h5>
+          Response
+        </h5>
+      </div>
+      <div class="card-body">
+
+        <div class="card-text">
+
+
+          @Html.Raw(TempData["QueryParams"].ToString().Replace(Environment.NewLine, "<br />"))
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

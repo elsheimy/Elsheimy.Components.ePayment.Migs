@@ -1,0 +1,127 @@
+﻿@model IndexViewModel
+@{
+  ViewBag.Title = "Mastercard MIGS Sample";
+}
+<form method="post">
+  <div class="row">
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>
+              Authentication Details
+            </h5>
+          </div>
+          <div class="card-text">
+            <div class="mb-3">
+              <label asp-for="MerchantID">Merchant ID:</label>
+              <input type="text" class="form-control" asp-for="MerchantID" />
+            </div>
+            <div class="mb-3">
+              <label asp-for="AccessCode">Access Code:</label>
+              <input type="text" class="form-control" asp-for="AccessCode" />
+            </div>
+            <div class="mb-3">
+              <label asp-for="HashSecret">Hash Secret:</label>
+              <input type="text" class="form-control" asp-for="HashSecret" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>
+              Order Details
+            </h5>
+          </div>
+          <div class="card-text">
+            <div class="mb-3">
+              <label asp-for="TransactionReference">Transaction Reference:</label>
+              <input type="text" class="form-control" asp-for="TransactionReference" />
+            </div>
+            <div class="mb-3">
+              <label asp-for="OrderInfo">Order Info:</label>
+              <input type="text" class="form-control" asp-for="OrderInfo" />
+            </div>
+            <div class="mb-3">
+              <label asp-for="Amount">Amount:</label>
+              <input type="number" class="form-control" asp-for="Amount" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>
+              Server-Hosted Call (3-party)
+            </h5>
+          </div>
+          <div class="card-text">
+            <div class="mb-3">
+              <label asp-for="Locale">Locale:</label>
+              <select asp-for="Locale" class="form-control">
+                <option value="en" selected="selected">English</option>
+                <option value="ar">Arabic</option>
+                <option value="es">Spanish</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" asp-action="ExecuteServerHostedCommand" asp-controller="Home"
+                  class="btn btn-primary">
+            Proceed
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">
+            <h5>
+              Merchant-Hosted (2-Party)
+            </h5>
+          </div>
+          <div class="card-text">
+            <div class="mb-3">
+              <label asp-for="CardNumber">Card Number:</label>
+              <input type="number" class="form-control" asp-for="CardNumber" />
+            </div>
+            <div class="mb-3">
+              <label asp-for="CardExpiryMonth">Card Expiry (Month):</label>
+              <input type="number" class="form-control" asp-for="CardExpiryMonth" />
+            </div>
+
+            <div class="mb-3">
+              <label asp-for="CardExpiryYear">Card Expiry (Year):</label>
+              <input type="number" class="form-control" asp-for="CardExpiryYear" />
+            </div>
+
+
+            <div class="mb-3">
+              <label asp-for="CardSecurityCode">Card Security Code:</label>
+              <input type="number" class="form-control" asp-for="CardSecurityCode" />
+            </div>
+
+            <button type="submit" asp-action="ExecuteMerchantHostedCommand" asp-controller="Home"
+                    class="btn btn-primary">
+              Proceed
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</form>
