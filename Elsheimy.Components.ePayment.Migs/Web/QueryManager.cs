@@ -47,7 +47,12 @@ namespace Elsheimy.Components.ePayment.Migs.Web
 
       return queryParams;
     }
-
+    
+    /// <summary>
+    /// Returns a list of QueryParameter from the specified query string.
+    /// </summary>
+    /// <param name="queryStr"></param>
+    /// <returns></returns>
     public static IEnumerable<QueryParameter> ExtractQueryParameters(string queryStr)
     {
       NameValueCollection coll = HttpUtility.ParseQueryString(queryStr);
@@ -73,6 +78,11 @@ namespace Elsheimy.Components.ePayment.Migs.Web
       return queryMembers;
     }
 
+    /// <summary>
+    /// Apply values of the given QueryParameters to the target object.
+    /// </summary>
+    /// <param name="targetObject"></param>
+    /// <param name="parameters"></param>
     public static void ApplyQueryParameters(object targetObject, IEnumerable<QueryParameter> parameters)
     {
       IEnumerable<MemberInfo> queryMembers = GetObjectQueryMembers(targetObject);
@@ -102,6 +112,11 @@ namespace Elsheimy.Components.ePayment.Migs.Web
       }
     }
 
+    /// <summary>
+    /// Creates a query string from QueryParameter list.
+    /// </summary>
+    /// <param name="parameters"></param>
+    /// <returns></returns>
     public static string CreateQueryString(IEnumerable<QueryParameter> parameters)
     {
       string queryStr = string.Empty;

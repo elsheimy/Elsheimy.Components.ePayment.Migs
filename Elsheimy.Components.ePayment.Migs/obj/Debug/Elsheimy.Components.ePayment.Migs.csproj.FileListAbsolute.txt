@@ -1,6 +1,0 @@
-D:\Mohammad Elsheimy\Private Work\Elsheimy.Components.ePayment\Elsheimy.Components.ePayment.Migs\obj\Debug\Elsheimy.Components.ePayment.Migs.csprojAssemblyReference.cache
-D:\Mohammad Elsheimy\Private Work\Elsheimy.Components.ePayment\Elsheimy.Components.ePayment.Migs\obj\Debug\Elsheimy.Components.ePayment.Migs.csproj.CoreCompileInputs.cache
-D:\Mohammad Elsheimy\Private Work\Elsheimy.Components.ePayment\Elsheimy.Components.ePayment.Migs\bin\Debug\Elsheimy.Components.ePayment.Migs.dll
-D:\Mohammad Elsheimy\Private Work\Elsheimy.Components.ePayment\Elsheimy.Components.ePayment.Migs\bin\Debug\Elsheimy.Components.ePayment.Migs.pdb
-D:\Mohammad Elsheimy\Private Work\Elsheimy.Components.ePayment\Elsheimy.Components.ePayment.Migs\obj\Debug\Elsheimy.Components.ePayment.Migs.dll
-D:\Mohammad Elsheimy\Private Work\Elsheimy.Components.ePayment\Elsheimy.Components.ePayment.Migs\obj\Debug\Elsheimy.Components.ePayment.Migs.pdb

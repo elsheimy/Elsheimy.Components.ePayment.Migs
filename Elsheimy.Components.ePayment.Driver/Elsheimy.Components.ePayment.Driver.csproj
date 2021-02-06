@@ -9,11 +9,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Elsheimy.Components.ePayment.Migs\Elsheimy.Components.ePayment.Migs.csproj" />
+    <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\lib\" />
+    <ProjectReference Include="..\Elsheimy.Components.ePayment.Migs\Elsheimy.Components.ePayment.Migs.csproj" />
   </ItemGroup>
 
 </Project>
